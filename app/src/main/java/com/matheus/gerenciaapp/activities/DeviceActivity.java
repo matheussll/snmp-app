@@ -45,15 +45,29 @@ public class DeviceActivity extends AppCompatActivity implements ManagerCallback
     public void onRequestFinished() {
         for(VariableBinding variable: Manager.allParsedValues) {
             if (variable.getOid().toString().equals(MainActivity.mib.acPower.toString())) {
-                power.setText("Ligado: " + variable.getVariable().toString());
+                String result = variable.getVariable().toString().equals("0") ? "Não" : "Sim";
+                power.setText("Ligado: " + result);
             } else if (variable.getOid().toString().equals(MainActivity.mib.acMode.toString())) {
-                mode.setText("Modo: " + variable.getVariable().toString());
+                String result = variable.getVariable().toString().equals("0") ? "Quente" : "Frio";
+                mode.setText("Modo: " + result);
             } else if (variable.getOid().toString().equals(MainActivity.mib.acTemperature.toString())) {
-                temperature.setText("Temperatura: " + variable.getVariable().toString());
+                String result = variable.getVariable().toString();
+
+                int temp = new Integer(result);
+
+                if(temp < 16) {
+                    result = "16";
+                } else if (temp > 30) {
+                    result = "30";
+                }
+
+                temperature.setText("Temperatura: " + result);
             } else if (variable.getOid().toString().equals(MainActivity.mib.acTurbo.toString())) {
-                turbo.setText("Turbo: " + variable.getVariable().toString());
+                String result = variable.getVariable().toString().equals("0") ? "Desligado" : "Ligado";
+                turbo.setText("Turbo: " + result);
             } else if (variable.getOid().toString().equals(MainActivity.mib.acDisplay.toString())) {
-                display.setText("Display: " + variable.getVariable().toString());
+                String result = variable.getVariable().toString().equals("0") ? "Desligado" : "Ligado";
+                display.setText("Display: " + result);
             }
         }
     }
