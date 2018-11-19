@@ -26,7 +26,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/border_image"
-                android:src="@mipmap/directory" />
+                android:src="@drawable/directory" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/border_image"
-                android:src="@mipmap/leaf" />
+                android:src="@drawable/leaf" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/border_image"
-                android:src="@mipmap/leaf" />
+                android:src="@drawable/leaf" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -98,7 +98,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/border_image"
-                android:src="@mipmap/directory" />
+                android:src="@drawable/directory" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -122,7 +122,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/border_image"
-                android:src="@mipmap/leaf" />
+                android:src="@drawable/leaf" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -146,7 +146,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/border_image"
-                android:src="@mipmap/leaf" />
+                android:src="@drawable/leaf" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -168,7 +168,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/border_image"
-                android:src="@mipmap/leaf" />
+                android:src="@drawable/leaf" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -190,7 +190,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
-                android:src="@mipmap/table" />
+                android:src="@drawable/table" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -212,7 +212,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
-                android:src="@mipmap/row" />
+                android:src="@drawable/row" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -234,7 +234,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="90dp"
-                android:src="@mipmap/leafinstance" />
+                android:src="@drawable/leafinstance" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -257,7 +257,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="90dp"
-                android:src="@mipmap/leafinstance" />
+                android:src="@drawable/leafinstance" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -281,7 +281,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/border_image"
-                android:src="@mipmap/leaf" />
+                android:src="@drawable/leaf" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -305,7 +305,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/border_image"
-                android:src="@mipmap/leaf" />
+                android:src="@drawable/leaf" />
 
             <TextView
                 android:layout_width="match_parent"

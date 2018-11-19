@@ -3,11 +3,13 @@ package com.matheus.gerenciaapp;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.matheus.gerenciaapp.activities.ConsoleActivity;
 import com.matheus.gerenciaapp.adapters.ConsoleAdapter;
+import com.matheus.gerenciaapp.interfaces.ManagerCallback;
 
 import org.snmp4j.CommunityTarget;
 import org.snmp4j.PDU;
@@ -60,6 +62,9 @@ public class Manager extends AppCompatActivity{
     public static Vector<VariableBinding> allParsedValues = new Vector<>();
 
     public void sendGetRequest(final OID oid) {
+        sendGetRequest(oid, null);
+    }
+    public void sendGetRequest(final OID oid, @Nullable ManagerCallback callback) {
 
         final PDU pdu = new PDU();
         pdu.add(new VariableBinding(new OID(oid)));
@@ -88,13 +93,27 @@ public class Manager extends AppCompatActivity{
 
                                     allParsedValues.add(response.getVariableBindings().lastElement());
 
-                                    Collection<VariableBinding> nonDuplicated = allParsedValues.stream()
-                                            .<Map<OID, VariableBinding>> collect(HashMap::new,(m, e)->m.put(e.getOid(), e), Map::putAll)
-                                            .values();
+                                    Vector<VariableBinding> newVariables = new Vector<>();
 
-                                    allParsedValues = new Vector(nonDuplicated);
-                                    Log.i("gerencia-app", "sendGetRequest all parsed values: " + allParsedValues);
+                                    Collections.reverse(allParsedValues);
 
+                                    for(VariableBinding variable: allParsedValues) {
+                                        boolean exists = false;
+                                        for (VariableBinding newVar: newVariables) {
+                                            if (variable.getOid().toString().equals(newVar.getOid().toString())) {
+                                                exists = true;
+                                            }
+                                        }
+                                        if (!exists) {
+                                            newVariables.add(variable);
+                                        }
+                                    }
+
+                                    allParsedValues = newVariables;
+
+                                    if (callback != null) {
+                                        callback.onRequestFinished();
+                                    }
                                 } else{
                                     Log.i("gerencia-app", "sendGetRequest onResponse PDU with error - response: " + response.getVariableBindings());
                                 }
