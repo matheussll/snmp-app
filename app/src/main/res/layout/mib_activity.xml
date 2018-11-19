@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/system"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border_image"
+                android:src="@mipmap/directory" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="system"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sysError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/border_image"
+                android:src="@mipmap/leaf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="sysError"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sysUptime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/border_image"
+                android:src="@mipmap/leaf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="sysUptime"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/airConditioner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border_image"
+                android:src="@mipmap/directory" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="airConditioner"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acPower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/border_image"
+                android:src="@mipmap/leaf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="acPower"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/border_image"
+                android:src="@mipmap/leaf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="acTemperature"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/border_image"
+                android:src="@mipmap/leaf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="acMode"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acFanTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:src="@mipmap/table" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="acFanTable"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acFanEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:src="@mipmap/row" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="acFanEntry"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acFanEntrySpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="90dp"
+                android:src="@mipmap/leafinstance" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="acFanEntrySpeed"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acFanEntryDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="90dp"
+                android:src="@mipmap/leafinstance" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="acFanEntryDirection"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/border_image"
+                android:src="@mipmap/leaf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="acDisplay"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acTurbo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/border_image"
+                android:src="@mipmap/leaf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:text="acTurbo"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

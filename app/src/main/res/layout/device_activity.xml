@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="2dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/devicePower"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical"
+            android:text="Ligado: "
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        <TextView
+            android:id="@+id/deviceMode"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical"
+            android:text="Modo: "
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        <TextView
+            android:id="@+id/deviceTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical"
+            android:text="Temperatura: "
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:src="@mipmap/arcondicionado" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="2dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/deviceDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical"
+            android:text="Display: "
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        <TextView
+            android:id="@+id/deviceTurbo"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical"
+            android:text="Turbo: "
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    </LinearLayout>
+</LinearLayout>
